@@ -220,7 +220,7 @@ def main(page: Page):
         '''Добавление всех элементов'''
 
         page.add(
-                Text('\n', size=6),
+                Text('\n', size=7),
                 banner,
                 Text('\n', size=12),
                 number,
