@@ -61,7 +61,7 @@ def main(page: Page):
         _color = [MY_COLOR, 'red', 'pink', 'WHITE', 'black', 'purple', 'indigo', 'blue', 'cyan', 'teal', 'green', 'lime', 'yellow', 'amber', 'orange', 'brown', 'bluegrey', 'grey']
         global color
         color = choice(_color)
-        banner.controls = [Text(spans=[TextSpan('TIGLACK', TextStyle(size=75, foreground=Paint(color=color, stroke_width=9, stroke_join='round', style='stroke')))], font_family='Consolas'), Text(spans=[TextSpan('TIGLACK', TextStyle(size=75, color=color))], font_family='Consolas')]
+        banner.controls = [Text(spans=[TextSpan('TIGLACK', TextStyle(size=60, foreground=Paint(color=color, stroke_width=9, stroke_join='round', style='stroke')))], font_family='Consolas'), Text(spans=[TextSpan('TIGLACK', TextStyle(size=60, color=color))], font_family='Consolas')]
         
         number.border_color=color
         number.cursor_color=color
@@ -197,7 +197,7 @@ def main(page: Page):
 
 
     # Баннер
-    banner = Stack([Text(spans=[TextSpan('TIGLACK', TextStyle(size=75, foreground=Paint(color=color, stroke_width=9, stroke_join='round', style='stroke')))], font_family='Consolas'), Text(spans=[TextSpan('TIGLACK', TextStyle(size=75, color=color))], font_family='Consolas')])
+    banner = Stack([Text(spans=[TextSpan('TIGLACK', TextStyle(size=60, foreground=Paint(color=color, stroke_width=9, stroke_join='round', style='stroke')))], font_family='Consolas'), Text(spans=[TextSpan('TIGLACK', TextStyle(size=60, color=color))], font_family='Consolas')])
 
     # Ввод номера
     number = TextField(label='Введите номер без знака "+"', width=275, text_align='center', border_radius=40, border_color=color, cursor_color=color, focused_border_color=color, autofocus=True, selection_color=color, label_style=TextStyle(color=color))
